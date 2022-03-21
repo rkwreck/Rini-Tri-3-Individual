@@ -12,6 +12,7 @@ Notes can be found by clicking on "Tech Talk Notes." They can also be viewed on 
 AP Test Prep plans can be found by clicking on "AP Test Prep." 
 
 # TT0 Data Structures Key Learnings
+Review Ticket: [Link](https://github.com/rkwreck/rinik/issues/1)
 - Linear list ex: for loops, enhanced for-loops
 - Non-linear list accessed by keys
 - Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
