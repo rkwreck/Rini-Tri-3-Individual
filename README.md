@@ -1,6 +1,7 @@
 # Rini-Tri-3-Individual
 
 Tri 3 Team Repository: [RedTailedHawks](https://github.com/mistylavender/RedTailedHawks)
+
 Link to Repl.It code: [Link](https://replit.com/@Rini/tri3code#Main.java)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
