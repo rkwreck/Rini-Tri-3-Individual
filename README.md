@@ -18,11 +18,63 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 - Arrays: store primitive types, each index is an element (non-linear Hashmaps) + holds values in key-value pairs (the values of the keys could even be array) (linear, direct access thru key)
 - Standardize: means to simplify how things are executed so theres not 1M ways to execute something
 
+IntByReference (from Challenge 2): 
+
+```java
+
+public int getValue() { //value is a private variable, have to use get method 
+        return value; 
+    }
+    
+    //b is of type IntByReferece but value is of type int and is a private variable, so we can't directly assign b to value.
+    //so...create a setValue method 
+    public void setValue(int num) {  
+        value = num;
+    }
+    
+    public void swapToLowHighOrder(IntByReference b){
+        int preserve = b.getValue(); //save the original value of b 
+        if (value > b.getValue()) {  //check for greater value
+            b.setValue(value);    
+            value = preserve;    //swap values
+        }
+    }
+
+```
+
 
 # TT1 Linked Lists Key Learnings
-Generic T:
+Generic T: is iterable
 
-is iterable
+Example from Challenge 3:
+
+```java
+
+/**
+     *  Clone an object,
+     *
+     * @param  node  object to clone
+     */
+    public LinkedList(LinkedList<T> node)
+    {
+        this.setData(node.data);
+        this.setPrevNode(node.prevNode);
+        this.setNextNode(node.nextNode);
+    }
+
+    /**
+     *  Setter for T data in DoubleLinkedNode object
+     *
+     * @param  data, update data of object
+     */
+    public void setData(T data)
+    {
+        this.data = data;
+    }
+
+```
+
+
 nil = null (means the same thing, have reached endpoint, both mean 'nothing')
 
 Stack: last in, first out Queue: first in, last out
