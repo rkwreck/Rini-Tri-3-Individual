@@ -47,6 +47,8 @@ public int getValue() { //value is a private variable, have to use get method
 
 
 # TT1 Linked Lists Key Learnings
+Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
+
 Generic T: is iterable
 
 Example from Challenge 3:
@@ -77,10 +79,110 @@ Example from Challenge 3:
 
 ```
 
+Queue Add: 
+```java 
 
-nil = null (means the same thing, have reached endpoint, both mean 'nothing')
+    public void add(T data) {
+        // add new object to end of Queue
+        LinkedList<T> tail = new LinkedList<>(data, null);
+
+        if (head == null)  // initial condition
+            this.head = this.tail = tail;
+        else {  // nodes in queue
+            this.tail.setNextNode(tail); // current tail points to new tail
+            this.tail = tail;  // update tail
+        }
+        System.out.println("Enqueued Data:" + data );
+    }
+
+```
+
+Queue delete:
+
+``` java
+
+    public void dequeue()
+    {
+        head = head.getNext(); //remove head by setting it to the next head 
+    }
+
+```
+
+Merge:
+```java 
+
+public void merge (Queue<T> q1, Queue<T> q2)
+   {
+       QueueIterator<T> itr1 = (QueueIterator<T>)q1.iterator();
+       QueueIterator<T> itr2 = (QueueIterator<T>)q2.iterator();
+       Integer data1 = (Integer)itr1.getCurrent();
+       Integer data2 = (Integer)itr2.getCurrent();
+       
+       while(itr1.hasNext() && itr2.hasNext())
+       {
+           if (data1 < data2)
+           {
+               queue.add((T)data1);
+               itr1.next();
+               data1 = (Integer)itr1.getCurrent(); 
+           }
+           else
+           {
+               queue.add((T)data2);
+               itr2.next();
+               data2 = (Integer)itr2.getCurrent();
+           }
+       }
+       
+       while(itr1.hasNext())  //add the last terms of Queue1
+       {
+           queue.add(itr1.getCurrent());
+           itr1.next();
+       }
+       while(itr2.hasNext())  //add the last terms of Queue2
+       {
+           queue.add(itr2.getCurrent());
+           itr2.next();
+       }
+       
+       printQueue(); 
+   }
+
+```
 
 Stack: last in, first out Queue: first in, last out
+``` java
+
+/**
+ * Driver Class
+ * Tests queue with string, integers, and mixes of Classes and types
+ */
+public class StackTester {
+    public static void main(String[] args)
+    {
+        // Create iterable Queue of Integers
+        Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        QueueManager qNums = new QueueManager("Integers", numbers );
+        System.out.println("This is Queue");
+        qNums.printQueue();
+        
+        System.out.println("Placing elements from Queue to Stack");
+        
+        System.out.println("This is Stack");
+        Stack s = qNums.convertToStack();
+        Integer data;
+        while((data = (Integer)s.peek()) != null)
+        {
+            System.out.print(data + " ");
+            s.pop(); 
+        }
+    }
+} 
+
+```
+
+**Key learnings:**
+nil = null (means the same thing, have reached endpoint, both mean 'nothing')
 
 remove packages & related use of packages from main (in #3) to get it to run
 
