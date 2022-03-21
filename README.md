@@ -14,6 +14,8 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 # TT0 Data Structures Key Learnings
 Review Ticket: [Link](https://github.com/rkwreck/rinik/issues/1)
+Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
+
 - Linear list ex: for loops, enhanced for-loops
 - Non-linear list accessed by keys
 - Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
@@ -48,6 +50,7 @@ public int getValue() { //value is a private variable, have to use get method
 
 # TT1 Linked Lists Key Learnings
 Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
+Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions))
 
 Generic T: is iterable
 
