@@ -10,46 +10,9 @@ This GitHub.io Page contains my Tech Talk notes, code for challenges, and my pre
 
 Notes can be found by clicking on "Tech Talk Notes." They can also be viewed on these wiki pages: 
 
-AP Test Prep plans can be found by clicking on "AP Test Prep." 
+AP Test Prep plans can be found by clicking on "AP Test Prep."
 
-# TT0 Data Structures Key Learnings
-
-**Review Ticket:** [Link](https://github.com/rkwreck/rinik/issues/1)
-
-**Code:** [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
-
-Key Learnings: 
-- Linear list ex: for loops, enhanced for-loops
-- Non-linear list accessed by keys
-- Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
-- OOP knows some of your key properties and then solves your problem
-- Arrays: store primitive types, each index is an element (non-linear Hashmaps) + holds values in key-value pairs (the values of the keys could even be array) (linear, direct access thru key)
-- Standardize: means to simplify how things are executed so theres not 1M ways to execute something
-
-IntByReference (from Challenge 2): 
-
-```java
-
-public int getValue() { //value is a private variable, have to use get method 
-        return value; 
-    }
-    
-    //b is of type IntByReferece but value is of type int and is a private variable, so we can't directly assign b to value.
-    //so...create a setValue method 
-    public void setValue(int num) {  
-        value = num;
-    }
-    
-    public void swapToLowHighOrder(IntByReference b){
-        int preserve = b.getValue(); //save the original value of b 
-        if (value > b.getValue()) {  //check for greater value
-            b.setValue(value);    
-            value = preserve;    //swap values
-        }
-    }
-
-```
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # TT1 Linked Lists Key Learnings
 
@@ -199,3 +162,46 @@ implements, similar to extend, but you just get the elements of the other class,
 elements between head & tail are connected thru the linked list
 
 Previous node: connecting to the node behind you Next node: connecting to the node in front of you If there is no node in front/behind you, then the previous/next value is "null"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# TT0 Data Structures Key Learnings
+
+**Review Ticket:** [Link](https://github.com/rkwreck/rinik/issues/1)
+
+**Code:** [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
+
+Key Learnings: 
+- Linear list ex: for loops, enhanced for-loops
+- Non-linear list accessed by keys
+- Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
+- OOP knows some of your key properties and then solves your problem
+- Arrays: store primitive types, each index is an element (non-linear Hashmaps) + holds values in key-value pairs (the values of the keys could even be array) (linear, direct access thru key)
+- Standardize: means to simplify how things are executed so theres not 1M ways to execute something
+
+IntByReference (from Challenge 2): 
+
+```java
+
+public int getValue() { //value is a private variable, have to use get method 
+        return value; 
+    }
+    
+    //b is of type IntByReferece but value is of type int and is a private variable, so we can't directly assign b to value.
+    //so...create a setValue method 
+    public void setValue(int num) {  
+        value = num;
+    }
+    
+    public void swapToLowHighOrder(IntByReference b){
+        int preserve = b.getValue(); //save the original value of b 
+        if (value > b.getValue()) {  //check for greater value
+            b.setValue(value);    
+            value = preserve;    //swap values
+        }
+    }
+
+```
+
+
+
