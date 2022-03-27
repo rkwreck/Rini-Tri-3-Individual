@@ -13,13 +13,143 @@ Notes can be found by clicking on "Tech Talk Notes." They can also be viewed on 
 AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-# TT2 Calculator Theory (Stacks/Arrays) 
-- Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression 
-- require the different mathemtical operators (ex use HashMap)
-- multiplication and division are of higher orders than + and - 
-- tokens: numbers, asterisk (multiplication symbol), paranthesis, (ignore spaces)
-- use operations to figure out if char is operator or seporator 
-- steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
+# TT2 Calculator Theory (Stacks/Arrays) Key Learnings
+
+**Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression**
+
+```java
+
+// Takes tokens and converts to Reverse Polish Notation (RPN), this is one where the operator follows its operands.
+    private void tokensToReversePolishNotation () {
+        // contains final list of tokens in RPN
+        this.reverse_polish = new ArrayList<>();
+
+        // stack is used to reorder for appropriate grouping and precedence
+        Stack tokenStack = new Stack();
+        for (String token : tokens) {
+            switch (token) {
+                // If left bracket push token on to stack
+                case "(":
+                    tokenStack.push(token);
+                    break;
+                case ")":
+                    while (tokenStack.peek() != null && !tokenStack.peek().equals("("))
+                    {
+                        reverse_polish.add( (String)tokenStack.peek() );
+                        tokenStack.pop();
+                    }
+                    tokenStack.pop();
+                    break;
+                case "^":
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                case "%":
+                    // While stack
+                    // not empty AND stack top element
+                    // and is an operator
+                    while (tokenStack.peek() != null && isOperator((String) tokenStack.peek()))
+                    {
+                        if ( isPrecedent(token, (String) tokenStack.peek() )) {
+                            reverse_polish.add((String)tokenStack.peek());
+                            tokenStack.pop(); 
+                            continue;
+                        }
+                        break;
+                    }
+                    // Push the new operator on the stack
+                    tokenStack.push(token);
+                    break;
+                default:    // Default should be a number, there could be test here
+                    this.reverse_polish.add(token);
+            }
+        }
+
+```
+
+**Requires the different mathemtical operators (ex use HashMap). Multiplication and division are of higher order/precedence than addition and subration. Tokens: numbers, asterisk, paranthesis, etc, ignore spaces.**
+
+```java
+
+// Helper definition for supported operators
+    private final Map<String, Integer> OPERATORS = new HashMap<>();
+    {
+        // Map<"token", precedence>
+        OPERATORS.put("^", 2);
+        OPERATORS.put("*", 3);
+        OPERATORS.put("/", 3);
+        OPERATORS.put("%", 3);
+        OPERATORS.put("+", 4);
+        OPERATORS.put("-", 4);
+    }
+    
+    // Helper definition for supported operators
+    private final Map<String, Integer> SEPARATORS = new HashMap<>();
+    {
+        // Map<"separator", not_used>
+        SEPARATORS.put(" ", 0);
+        SEPARATORS.put("(", 0);
+        SEPARATORS.put(")", 0);
+    }
+
+```
+
+```java
+
+// Compare precedence of operators.
+    private Boolean isPrecedent(String token1, String token2) {
+        // token 1 is precedent if it is greater than token 2
+        return (OPERATORS.get(token1) - OPERATORS.get(token2) >= 0) ;
+    }
+
+```
+
+**Use operations to figure out if char is operator or seperator**
+
+``` java
+
+ // Test if token is an operator
+    private boolean isOperator(String token) {
+        // find the token in the hash map
+        return OPERATORS.containsKey(token);
+    }
+
+    // Test if token is an separator
+    private boolean isSeperator(String token) {
+        // find the token in the hash map
+        return SEPARATORS.containsKey(token);
+    }
+
+```
+
+```java
+
+public static boolean isNumber(String string) {
+        double doubleValue;   		
+        if(string == null || string.equals("")) {
+            return false;
+        }
+        
+        try { 
+            doubleValue = Double.parseDouble(string); //check if it's a number/operand
+            return true;
+        } catch (NumberFormatException e) {   //check if it's an operator 
+            return false;
+        }
+    }
+
+```
+
+**General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)**
+
+```java
+
+// Pop final result and set as final result for expression
+        result = calculation.peek().doubleValue();
+        calculation.pop(); 
+
+```
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT1 Linked Lists Key Learnings
