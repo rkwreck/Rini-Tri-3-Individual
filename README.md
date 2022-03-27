@@ -8,14 +8,26 @@ Link to Repl.It code: [Link](https://replit.com/@Rini/tri3code#Main.java)
 
 This GitHub.io Page contains my Tech Talk notes, code for challenges, and my preparation plans for the AP Exam.
 
-Notes can be found by clicking on "Tech Talk Notes." They can also be viewed on these wiki pages: 
+Under each header are my key learnings, code snippets, link to my review ticket, and link to my complete code. 
+
+Notes can be found by clicking on "Tech Talk Notes."  
 
 AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
 
-**Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression**
+### General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
+
+```java
+
+// Pop final result and set as final result for expression
+        result = calculation.peek().doubleValue();
+        calculation.pop(); 
+
+```
+
+### Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression**
 
 ```java
 
@@ -68,7 +80,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ```
 
-**Requires the different mathemtical operators (ex use HashMap). Multiplication and division are of higher order/precedence than addition and subration. Tokens: numbers, asterisk, paranthesis, etc, ignore spaces.**
+### Requires the different mathemtical operators (ex use HashMap). Multiplication and division are of higher order/precedence than addition and subration. Tokens: numbers, asterisk, paranthesis, etc, ignore spaces.**
 
 ```java
 
@@ -105,7 +117,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ```
 
-**Use operations to figure out if char is operator or seperator**
+### Use operations to figure out if char is operator or seperator**
 
 ``` java
 
@@ -141,22 +153,12 @@ public static boolean isNumber(String string) {
 
 ```
 
-**General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)**
-
-```java
-
-// Pop final result and set as final result for expression
-        result = calculation.peek().doubleValue();
-        calculation.pop(); 
-
-```
-
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT1 Linked Lists Key Learnings
 
-**Review Ticket:** [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
+### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
 
-**Code:** [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions))
+### Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions))
 
 Generic T is iterable. Example from Challenge 3:
 
@@ -288,7 +290,7 @@ public class StackTester {
 
 ```
 
-**Key learnings:**
+### Key learnings:
 
 nil = null (means the same thing, have reached endpoint, both mean 'nothing')
 
@@ -304,11 +306,11 @@ Previous node: connecting to the node behind you Next node: connecting to the no
 
 # TT0 Data Structures Key Learnings
 
-**Review Ticket:** [Link](https://github.com/rkwreck/rinik/issues/1)
+### Review Ticket: [Link](https://github.com/rkwreck/rinik/issues/1)
 
-**Code:** [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
+### Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
 
-**Key Learnings: **
+### Key Learnings:
 - Linear list ex: for loops, enhanced for-loops
 - Non-linear list accessed by keys
 - Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
@@ -339,6 +341,3 @@ public int getValue() { //value is a private variable, have to use get method
     }
 
 ```
-
-
-
