@@ -17,6 +17,8 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
 
+### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3)
+
 ### General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
 
 ```java
