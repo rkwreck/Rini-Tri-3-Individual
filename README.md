@@ -19,7 +19,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3)
 
-### My Code: Link
+### My Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT2-Calculator-Theory-(My-Solutions))
 
 ### Key Learnings:
 
