@@ -19,7 +19,11 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3)
 
-### General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
+### My Code: Link
+
+### Key Learnings:
+
+General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
 
 ```java
 
@@ -29,7 +33,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ```
 
-### Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression**
+Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression
 
 ```java
 
@@ -82,7 +86,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ```
 
-### Requires the different mathemtical operators (ex use HashMap). Multiplication and division are of higher order/precedence than addition and subration. Tokens: numbers, asterisk, paranthesis, etc, ignore spaces.**
+Requires the different mathemtical operators (ex use HashMap). Multiplication and division are of higher order/precedence than addition and subration. Tokens: numbers, asterisk, paranthesis, etc, ignore spaces.
 
 ```java
 
@@ -119,7 +123,7 @@ AP Test Prep plans can be found by clicking on "AP Test Prep."
 
 ```
 
-### Use operations to figure out if char is operator or seperator**
+Use operations to figure out if char is operator or seperator.
 
 ``` java
 
@@ -161,6 +165,13 @@ public static boolean isNumber(String string) {
 ### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
 
 ### Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions))
+
+### Key Learnings:
+- nil = null (means the same thing, have reached endpoint, both mean 'nothing')
+- remove packages & related use of packages from main (in #3) to get it to run
+- implements, similar to extend, but you just get the elements of the other class, gives you methods that you need to define (similar to abstract)
+- elements between head & tail are connected thru the linked list
+- Previous node: connecting to the node behind you Next node: connecting to the node in front of you If there is no node in front/behind you, then the previous/next value is "null"
 
 Generic T is iterable. Example from Challenge 3:
 
@@ -291,18 +302,6 @@ public class StackTester {
 } 
 
 ```
-
-### Key learnings:
-
-nil = null (means the same thing, have reached endpoint, both mean 'nothing')
-
-remove packages & related use of packages from main (in #3) to get it to run
-
-implements, similar to extend, but you just get the elements of the other class, gives you methods that you need to define (similar to abstract)
-
-elements between head & tail are connected thru the linked list
-
-Previous node: connecting to the node behind you Next node: connecting to the node in front of you If there is no node in front/behind you, then the previous/next value is "null"
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
