@@ -15,11 +15,19 @@ Notes can be found by clicking on the "Tech Talk Notes" tab.
 AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+### History
+- [TT0 Data Structures](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt0-data-structures-key-learnings)
+- [TT1 Linked Lists](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt1-linked-lists-key-learnings)
+- [TT2 Calculator Theory](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt2-calculator-theory-stacksarrays-key-learnings) 
+
+
+
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
 
-### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3)
-
-### My Code: [Code](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT2-Calculator-Theory-(My-Solutions)) + [Runtime](https://youtu.be/K7eIfpWqYLo?t=27)
+| Review Ticket | Code | Runtime | 
+| :-----------: | :--: | :-----: | 
+| [TT2 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT2-Calculator-Theory-(My-Solutions)) | [Video Link](https://youtu.be/K7eIfpWqYLo?t=27)
 
 ### Key Learnings:
 
@@ -162,9 +170,9 @@ public static boolean isNumber(String string) {
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT1 Linked Lists Key Learnings
 
-### Review Ticket: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1)
-
-### Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions))
+| Review Ticket | Code | Runtime | 
+| :-----------: | :--: | :-----: | 
+| [TT1 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions)) | 
 
 ### Key Learnings:
 - nil = null (means the same thing, have reached endpoint, both mean 'nothing')
@@ -307,9 +315,9 @@ public class StackTester {
 
 # TT0 Data Structures Key Learnings
 
-### Review Ticket: [Link](https://github.com/rkwreck/rinik/issues/1)
-
-### Code: [Link](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions))
+| Review Ticket | Code | Runtime | 
+| :-----------: | :--: | :-----: | 
+| [TT0 Review Ticket](https://github.com/rkwreck/rinik/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions)) | 
 
 ### Key Learnings:
 - Linear list ex: for loops, enhanced for-loops
