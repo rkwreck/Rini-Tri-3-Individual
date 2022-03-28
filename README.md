@@ -8,11 +8,11 @@ Link to Repl.It code: [Link](https://replit.com/@Rini/tri3code#Main.java)
 
 This GitHub.io Page contains my Tech Talk notes, code for challenges, and my preparation plans for the AP Exam.
 
-Under each header are my key learnings, code snippets, link to my review ticket, and link to my complete code. 
+Under each header are my key learnings, code snippets, link to my review ticket, and link to my complete code. Complete code can also be found on the "My TT Code Solutions" tab.
 
-Notes can be found by clicking on "Tech Talk Notes."  
+Notes can be found by clicking on the "Tech Talk Notes" tab.  
 
-AP Test Prep plans can be found by clicking on "AP Test Prep."
+AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
