@@ -16,13 +16,6 @@ AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-### History
-- [TT0 Data Structures](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt0-data-structures-key-learnings)
-- [TT1 Linked Lists](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt1-linked-lists-key-learnings)
-- [TT2 Calculator Theory](https://github.com/rkwreck/Rini-Tri-3-Individual/edit/main/README.md#tt2-calculator-theory-stacksarrays-key-learnings) 
-
-
-
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
 
 | Review Ticket | Code | Runtime | 
