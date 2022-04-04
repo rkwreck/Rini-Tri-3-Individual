@@ -49,6 +49,38 @@ The following data already throws out high & low values before spitting out the 
 ## Final Judgements
 The best sort is Merge Sort since it has the fewest number of comparisons and swaps, simplest big O complexity, and lowest time.  
 
+## Sort Implementations:
+
+Parent class for all sort methods:
+```java
+class sorter{
+    public int comparisons;
+    public int swaps;
+    public sorter()
+    {
+        comparisons = 0;
+        swaps = 0;
+    }
+    public void sort(int[] arr)
+    {
+    }
+    
+    public int getComparisons()
+    {
+        return comparisons;
+    }
+    
+    public int getSwaps()
+    {
+        return swaps;
+    }
+    public void reset()
+    {
+        comparisons = 0;
+        swaps = 0;
+    }
+}
+```
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
