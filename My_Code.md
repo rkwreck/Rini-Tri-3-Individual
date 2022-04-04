@@ -12,7 +12,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Sorts {
+public class Sorts { 
     private final ArrayList<Integer> data = new ArrayList<>();
     private final Duration timeElapsed;
     
@@ -195,6 +195,7 @@ public class Sorts {
    
 }
 
+/* basic sort class w/ all methods that each sort will use for analytics */
 class sorter{
     public int comparisons;
     public int swaps;
