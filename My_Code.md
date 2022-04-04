@@ -2,6 +2,386 @@
 
 # My TT Code Solutions
 
+## TT3: Sorts
+```java
+
+
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class Sorts {
+    private final ArrayList<Integer> data = new ArrayList<>();
+    private final Duration timeElapsed;
+    
+    static int[] convertIntegers(ArrayList<Integer> integers)
+    {
+     int[] ret = new int[integers.size()];
+     for (int i=0; i < ret.length; i++)
+     {
+        ret[i] = integers.get(i).intValue();
+     }
+     return ret;
+    }
+   
+   
+     public Sorts(int size,sorter sort) {
+        
+        // build an array
+        for (int i = 0; i < size; i++) {
+            data.add((int)(Math.random() * (size+1)));
+        }
+        
+        int[] arr = convertIntegers(data);
+        Instant start = Instant.now(); //time capture -- start 
+        sort.sort(arr);
+        Instant end = Instant.now();    // time capture -- end
+        this.timeElapsed = Duration.between(start, end);
+    }
+    
+    ArrayList<Integer> getData() {
+        return data;
+    }
+
+    int getTimeElapsed() {
+        return timeElapsed.getNano();
+    }
+
+
+    static void selectionSortTest() {
+        int sum=0, time=0, TIMES=12, SIZE=5000;
+        int sumComparisons = 0;
+        int sumSwaps = 0;
+        for(int i=0; i< TIMES; i++) {
+            
+            sorter sortObject = new selectionSort();
+            Sorts s = new Sorts(SIZE,sortObject);
+            for(int j = 0; j<s.getData().size(); j++) {
+                // To see data, uncomment next line
+                // System.out.println(s.getData());
+                sum += s.getData().get(j);
+            }
+            //System.out.println("Average random: " + sum / ((i+1)*SIZE));
+            //System.out.println("Nanoseconds: " + s.getTimeElapsed());
+            time += s.getTimeElapsed();
+            sumComparisons += sortObject.getComparisons();
+            sumSwaps += sortObject.getSwaps();
+            //resetCounters();
+        }
+        //System.out.println("Average random: " + sum / (TIMES*SIZE));
+        System.out.println("Average Comparisons: " + sumComparisons/TIMES);
+        System.out.println("Average Swaps: " + sumSwaps/TIMES);
+        System.out.println("Total Nanoseconds: " + time );
+        System.out.println("Total Seconds: " + time /1000000000.0);
+    }
+
+    static void insertionSortTest() {
+        int sum=0, time=0, TIMES=12, SIZE=5000;
+        int sumComparisons = 0;
+        int sumSwaps = 0;
+        for(int i=0; i< TIMES; i++) {
+            
+            sorter sortObject = new insertionSort();
+            Sorts s = new Sorts(SIZE,sortObject);
+            for(int j = 0; j<s.getData().size(); j++) {
+                // To see data, uncomment next line
+                // System.out.println(s.getData());
+                sum += s.getData().get(j);
+            }
+            //System.out.println("Average random: " + sum / ((i+1)*SIZE));
+            //System.out.println("Nanoseconds: " + s.getTimeElapsed());
+            time += s.getTimeElapsed();
+            
+            sumComparisons += sortObject.getComparisons();
+            sumSwaps += sortObject.getSwaps();
+            //resetCounters();
+        }
+        //System.out.println("Average random: " + sum / (TIMES*SIZE));
+        System.out.println("Average Comparisons: " + sumComparisons/TIMES);
+        System.out.println("Average Swaps: " + sumSwaps/TIMES);
+        System.out.println("Total Nanoseconds: " + time );
+        System.out.println("Total Seconds: " + time /1000000000.0);
+    }
+    
+    static void bubbleSortTest() {
+        int sum=0, time=0, TIMES=12, SIZE=5000;
+        int sumComparisons = 0;
+        int sumSwaps = 0;
+        for(int i=0; i< TIMES; i++) {
+            
+            sorter sortObject = new bubbleSort();
+            Sorts s = new Sorts(SIZE,sortObject);
+            
+            for(int j = 0; j<s.getData().size(); j++) {
+                // To see data, uncomment next line
+                // System.out.println(s.getData());
+                sum += s.getData().get(j);
+            }
+            //System.out.println("Average random: " + sum / ((i+1)*SIZE));
+            //System.out.println("Nanoseconds: " + s.getTimeElapsed());
+            time += s.getTimeElapsed();
+            
+            sumComparisons += sortObject.getComparisons();
+            sumSwaps += sortObject.getSwaps();
+            //resetCounters();
+        }
+        //System.out.println("Average random: " + sum / (TIMES*SIZE));
+        System.out.println("Average Comparisons: " + sumComparisons/TIMES);
+        System.out.println("Average Swaps: " + sumSwaps/TIMES);
+        System.out.println("Total Nanoseconds: " + time );
+        System.out.println("Total Seconds: " + time /1000000000.0);
+    }
+    
+    static void mergeSortTest() {
+        int sum=0, time=0, TIMES=12, SIZE=5000;
+         int sumComparisons = 0;
+        int sumSwaps = 0;
+        for(int i=0; i< TIMES; i++) {
+            
+            sorter sortObject = new mergeSort();
+            Sorts s = new Sorts(SIZE,sortObject);
+          
+            for(int j = 0; j<s.getData().size(); j++) {
+                // To see data, uncomment next line
+                // System.out.println(s.getData());
+                sum += s.getData().get(j);
+            }
+            //System.out.println("Average random: " + sum / ((i+1)*SIZE));
+            //System.out.println("Nanoseconds: " + s.getTimeElapsed());
+            time += s.getTimeElapsed();
+            
+            sumComparisons += sortObject.getComparisons();
+            sumSwaps += sortObject.getSwaps();
+            //resetCounters();
+        }
+        //System.out.println("Average random: " + sum / (TIMES*SIZE));
+        System.out.println("Average Comparisons: " + sumComparisons/TIMES);
+        System.out.println("Average Swaps: " + sumSwaps/TIMES);
+        System.out.println("Total Nanoseconds: " + time );
+        System.out.println("Total Seconds: " + time /1000000000.0);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("=======================================================");
+        System.out.println("Selection Sort Analysis");
+        System.out.println("=======================================================");
+        selectionSortTest();
+        System.out.println("Selection Sort Analysis Completed");
+        System.out.println("=======================================================");
+        
+        System.out.println("=======================================================");
+        System.out.println("Insertion Sort Analysis");
+        System.out.println("=======================================================");
+        insertionSortTest();
+        System.out.println("Insertion Sort Analysis Completed");
+        System.out.println("=======================================================");
+        
+        System.out.println("=======================================================");
+        System.out.println("Bubble Sort Analysis");
+        System.out.println("=======================================================");
+        bubbleSortTest();
+        System.out.println("Bubble Sort Analysis Completed");
+        System.out.println("=======================================================");
+        
+        System.out.println("=======================================================");
+        System.out.println("Merge Sort Analysis");
+        System.out.println("=======================================================");
+        mergeSortTest();
+        System.out.println("Merge Sort Analysis Completed");
+        System.out.println("=======================================================");
+    }
+   
+}
+
+class sorter{
+    public int comparisons;
+    public int swaps;
+    public sorter()
+    {
+        comparisons = 0;
+        swaps = 0;
+    }
+    public void sort(int[] arr)
+    {
+    }
+    
+    public int getComparisons()
+    {
+        return comparisons;
+    }
+    
+    public int getSwaps()
+    {
+        return swaps;
+    }
+    public void reset()
+    {
+        comparisons = 0;
+        swaps = 0;
+    }
+}
+
+class selectionSort extends sorter{
+    public selectionSort()
+    {
+        super();
+    }
+    public void sort(int[] elements)
+    {
+      comparisons = 0;
+      swaps = 0;
+      for (int j = 0; j < elements.length - 1; j++)
+      {
+         int minIndex = j;
+         for (int k = j + 1; k < elements.length; k++)
+         {
+            comparisons++; 
+            if (elements[k] < elements[minIndex])
+            {
+               minIndex = k;
+            }
+         }
+         int temp = elements[j];
+         elements[j] = elements[minIndex];
+         elements[minIndex] = temp;
+         swaps++;
+       }
+    }
+}
+
+class insertionSort extends sorter{
+    public insertionSort()
+    {
+        super();
+    }
+    
+    public void sort(int[] elements)
+    {
+      comparisons = 0;
+      swaps = 0;
+      for (int j = 1; j < elements.length; j++)
+      {
+         int temp = elements[j];
+         int possibleIndex = j;
+         while (possibleIndex > 0 && temp < elements[possibleIndex - 1])
+         {
+             comparisons++;
+            elements[possibleIndex] = elements[possibleIndex - 1];
+            possibleIndex--;
+         }
+         elements[possibleIndex] = temp;
+         swaps++;
+      }
+   }   
+}
+
+class bubbleSort extends sorter{
+    public bubbleSort()
+    {
+        super();
+    }
+    
+    public void sort(int[] arr)
+    {
+      int n = arr.length;  
+      int temp = 0; 
+      
+      comparisons = 0;
+      swaps = 0;
+      for(int i=0; i < n; i++){  
+        for(int j=1; j < (n-i); j++){  
+          comparisons++;
+          if(arr[j-1] > arr[j]){  
+            //swap elements  
+            temp = arr[j-1];  
+            arr[j-1] = arr[j];  
+            arr[j] = temp;  
+            swaps++;
+          }               
+        }  
+      } 
+      
+    }   
+}
+
+class mergeSort extends sorter{
+    public mergeSort()
+    {
+        super();
+    }
+    
+    public void sort(int[] elements)
+    {
+      int n = elements.length;
+      int[] temp = new int[n];
+      comparisons = 0;
+      swaps = 0;
+      mergeSortHelper(elements, 0, n - 1, temp);
+    }
+    
+    private  void mergeSortHelper(int[] elements,
+                                       int from, int to, int[] temp)
+   {
+       if (from < to)
+       {
+          int middle = (from + to) / 2;
+          mergeSortHelper(elements, from, middle, temp);
+          mergeSortHelper(elements, middle + 1, to, temp);
+          merge(elements, from, middle, to, temp);
+       }
+   }
+   
+   private void merge(int[] elements, int from,
+                             int mid, int to, int[] temp)
+   {
+      int i = from;
+      int j = mid + 1;
+      int k = from;
+
+      while (i <= mid && j <= to)
+      {
+         comparisons++;
+         swaps++;
+         if (elements[i] < elements[j])
+         {
+            temp[k] = elements[i];
+            i++;
+         }
+         else
+         {
+            temp[k] = elements[j];
+            j++;
+         }
+         k++;
+      }
+
+      while (i <= mid)
+      {
+         temp[k] = elements[i];
+         i++;
+         k++;
+      }
+
+      while (j <= to)
+      {
+         temp[k] = elements[j];
+         j++;
+         k++;
+      }
+
+      for (k = from; k <= to; k++)
+      {
+         elements[k] = temp[k];
+      }
+   }
+
+}
+
+```
+
+
 ## TT2: Calculator Theory
 
 ### Runtime Video: [Link](https://youtu.be/K7eIfpWqYLo?t=27)
