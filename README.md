@@ -13,6 +13,9 @@ Notes can be found by clicking on the "Tech Talk Notes" tab.
 AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+# TT3 Sorts 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # TT2 Calculator Theory (Stacks/Arrays) Key Learnings
 
