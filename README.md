@@ -17,7 +17,7 @@ AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 | Review Ticket | Code |
 | :-----------: | :--: | 
-| [TT3 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/4) | [Code on Wiki](https://github.com/rkwreck/rinik/wiki/improved-sorts-code) | 
+| [TT3 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/4) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT3-Sorts-Code-(My-Solutions)) | 
 
 ## Big O Complexity
 **Bubble Sort:**
