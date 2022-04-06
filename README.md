@@ -20,6 +20,7 @@ AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 | [TT3 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/4) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT3-Sorts-Code-(My-Solutions)) | 
 
 ## Big O Complexity
+
 **Bubble Sort:**
 Best case: O(n)
 Worst case: O(n^2)
