@@ -1,6 +1,3 @@
-//import com.nighthawk.csa.mvc.DataOps.genericDataModel.Alphabet;
-//import com.nighthawk.csa.mvc.DataOps.genericDataModel.Animal;
-//import com.nighthawk.csa.mvc.DataOps.genericDataModel.Cupcakes;
 import java.util.*;
 
 
@@ -36,11 +33,11 @@ class Queue<T> implements Iterable<T> {
     /**
      *  Remove an object from the head of the queue.
      *
-     * @param
+     * @param 
      */
     public void dequeue()
     {
-        head = head.getNext(); //remove head by setting it to the next head
+        head = head.getNext(); //remove head by setting it to the next head 
     }
     /**
      *  Returns the head object.
@@ -148,7 +145,7 @@ class QueueManager<T> {
             System.out.print(data + " ");
         System.out.println();
     }
-
+    
     /**
      * Remove one Queue element at a time till Queue is empty.
      */
@@ -156,12 +153,12 @@ class QueueManager<T> {
     {
         QueueIterator<T> itr = (QueueIterator<T>)queue.iterator();
         while(itr.hasNext()) {
-            T data = itr.next();
-            System.out.println("Dequeued Data:" + data );
-            queue.dequeue();
-            count--;
-            printQueue();
-        }
+         T data = itr.next();
+         System.out.println("Dequeued Data:" + data );
+         queue.dequeue();
+         count--;
+         printQueue();
+      }
     }
 }
 
@@ -177,12 +174,12 @@ public class QueueTester {
         QueueManager qWords = new QueueManager("Words", words );
         //qWords.printQueue();
         qWords.remove();
-
-
-
+        
+      
+       
     }
-
-}
+    
+} 
 class LinkedList<T>
 {
     private T data;
