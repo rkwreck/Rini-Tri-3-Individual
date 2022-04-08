@@ -14,49 +14,20 @@ AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-| Tech Talk | Review Ticket | Code (on Wiki) | 
-| :-------: | :-----------: | :------------: | 
-| TT0: Data Structures | 
+| Tech Talk | Review Ticket | Code | 
+| :-------: | :-----------: | :--: | 
+| TT0: Data Structures | [TT0 Review Ticket](https://github.com/rkwreck/rinik/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions)) |
+| TT1: Linked Lists | [TT1 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions)) | 
+| TT2: Calculator Theory | [TT2 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT2-Calculator-Theory-(My-Solutions)) + [Runtime Video](https://youtu.be/K7eIfpWqYLo?t=27) | 
+| TT3: Sorts | [TT3 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/4) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT3-Sorts-Code-(My-Solutions)) | 
 
-# TT3 Sorts
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
-| Review Ticket | Code |
-| :-----------: | :--: | 
-| [TT3 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/4) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT3-Sorts-Code-(My-Solutions)) | 
+# Key Learnings w/ Code Snippets:
 
-## Big O Complexity
-
-**Bubble Sort:**
-Best case: O(n)
-Worst case: O(n^2)
-
-**Insertion Sort:**
-Best case: O(n)
-Worst case: O(n^2)
-
-**Selection Sort**
-Best case: O(n^2)
-Worst case: O(n^2)
-
-**Merge Sort**
-Best case: O(nlogn)
-Worst case: O(nlogn)
-
-## Data/Analytics 
-The following data already throws out high & low values before spitting out the values.
-![image](https://user-images.githubusercontent.com/89210546/161578291-0cc25bae-b181-4ae7-819f-85cefee3a34b.png)
-
-![image](https://user-images.githubusercontent.com/89210546/161578326-b6003d99-15f5-45d9-9d54-6afe7c6e072a.png)
-
-![image](https://user-images.githubusercontent.com/89210546/161578340-a15acfaa-9d51-4b6d-b683-1eeb7e4eb98a.png)
-
-![image](https://user-images.githubusercontent.com/89210546/161578354-1ddd6075-3082-499e-8cb7-8967aabb45c7.png)
-
-## Final Judgements
-The best sort is Merge Sort since it has the fewest number of comparisons and swaps, simplest big O complexity, and lowest time.  
+## TT3 Sorts
 
 ## Sort Implementations:
-
 Parent class for all sort methods:
 ```java
 class sorter{
@@ -90,13 +61,7 @@ class sorter{
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-# TT2 Calculator Theory (Stacks/Arrays) Key Learnings
-
-| Review Ticket | Code | Runtime | 
-| :-----------: | :--: | :-----: | 
-| [TT2 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/3) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT2-Calculator-Theory-(My-Solutions)) | [Video Link](https://youtu.be/K7eIfpWqYLo?t=27)
-
-### Key Learnings:
+## TT2 Calculator Theory (Stacks/Arrays)
 
 General steps: tokenize, RPN using Shunting-Yard algo (operands in stack by precedence, operators in ArrayList), then operators go in stack, operands push two operators out a time, then the operand becomes a number (operator), gets used by next operand, etc, untill calculation is finished)
 
@@ -235,13 +200,8 @@ public static boolean isNumber(String string) {
 ```
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-# TT1 Linked Lists Key Learnings
+## TT1 Linked Lists Key Learnings
 
-| Review Ticket | Code | Runtime | 
-| :-----------: | :--: | :-----: | 
-| [TT1 Review Ticket](https://github.com/rkwreck/Rini-Tri-3-Individual/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT1-Linked-Lists-Code-(My-Solutions)) | 
-
-### Key Learnings:
 - nil = null (means the same thing, have reached endpoint, both mean 'nothing')
 - remove packages & related use of packages from main (in #3) to get it to run
 - implements, similar to extend, but you just get the elements of the other class, gives you methods that you need to define (similar to abstract)
@@ -377,16 +337,10 @@ public class StackTester {
 } 
 
 ```
-
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-# TT0 Data Structures Key Learnings
+## TT0 Data Structures 
 
-| Review Ticket | Code | Runtime | 
-| :-----------: | :--: | :-----: | 
-| [TT0 Review Ticket](https://github.com/rkwreck/rinik/issues/1) | [Code on Wiki](https://github.com/rkwreck/Rini-Tri-3-Individual/wiki/TT0:-Data-Structures-Code-(My-Solutions)) | 
-
-### Key Learnings:
 - Linear list ex: for loops, enhanced for-loops
 - Non-linear list accessed by keys
 - Procedural is a type of imperative programming. Use flowchart diagrams bc they're more focused on procedure.
