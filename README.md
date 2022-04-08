@@ -4,6 +4,10 @@
 
 **[Commits](https://github.com/rkwreck/Rini-Tri-3-Individual/commits/main)** + **[Insight Graphs](https://github.com/rkwreck/Rini-Tri-3-Individual/graphs/contributors)**
 
+Cross-over partner: [Rachel Lee's Repo](https://github.com/rachelklee/csa-datastructures/graphs/contributors)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 This GitHub.io Page contains my Tech Talk notes, code for challenges, and my preparation plans for the AP Exam.
 
 Under each header are my key learnings, code snippets, link to my review ticket, and link to my complete code. Complete code can also be found on the "My TT Code Solutions" tab.
