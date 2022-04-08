@@ -3,6 +3,7 @@
 # Sorts 
 
 ## Big O Complexity
+
 | Type of Sort | Best Case | Worst Case | 
 | :----------: | :-------: | :--------: | 
 | Bubble Sort | O(n) | O(n^2) | 
