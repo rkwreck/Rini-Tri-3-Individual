@@ -3,21 +3,12 @@
 # Sorts 
 
 ## Big O Complexity
-**Bubble Sort:**
-Best case: O(n)
-Worst case: O(n^2)
-
-**Insertion Sort:**
-Best case: O(n)
-Worst case: O(n^2)
-
-**Selection Sort**
-Best case: O(n^2)
-Worst case: O(n^2)
-
-**Merge Sort**
-Best case: O(nlogn)
-Worst case: O(nlogn)
+| Type of Sort | Best Case | Worst Case | 
+| :----------: | :-------: | :--------: | 
+| Bubble Sort | O(n) | O(n^2) | 
+| Insertion Sort | O(n) | O(n^2) | 
+| Selection Sort | O(n^2) | O(n^2) | 
+| Merge Sort | O(nlogn) | O(nlogn) | 
 
 ## Data/Analytics 
 The following data already throws out high & low values before spitting out the values.
