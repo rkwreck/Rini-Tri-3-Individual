@@ -13,6 +13,11 @@ Notes can be found by clicking on the "Tech Talk Notes" tab.
 AP Test Prep plans can be found by clicking on the "AP Test Prep" tab.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+| Tech Talk | Review Ticket | Code (on Wiki) | 
+| :-------: | :-----------: | :------------: | 
+| TT0: Data Structures | 
+
 # TT3 Sorts
 
 | Review Ticket | Code |
