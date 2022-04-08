@@ -1,6 +1,8 @@
 # Rini-Tri-3-Individual
 
-Tri 3 Team Repository: [RedTailedHawks](https://github.com/mistylavender/RedTailedHawks)
+**Tri 3 Team Repository: [RedTailedHawks](https://github.com/mistylavender/RedTailedHawks)**
+
+**[Commits](https://github.com/rkwreck/Rini-Tri-3-Individual/commits/main)** + **[Insight Graphs](https://github.com/rkwreck/Rini-Tri-3-Individual/graphs/contributors)**
 
 This GitHub.io Page contains my Tech Talk notes, code for challenges, and my preparation plans for the AP Exam.
 
