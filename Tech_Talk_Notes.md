@@ -3,6 +3,14 @@
 # Tech Talk Notes
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+## TT3: Sorts
+
+- Bubble sort, merge sort, insertion sort, selection sort
+- use 5000 pieces of data & run 12 times to analyize which is most efficient 
+    - consider time, comparisons, swaps 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 ## TT2: Calculator Theory/RPN/Shunting-Yard Algorithm Notes 
 
 - Reverse Polish Notation (RPN), format where operand follows operator, ex (3 + 4) becaomes (3 4 +) --> useful since it pushes the calculations into a stack and then pops out the expression. RPN uses Shunting-Yard Algorithm. Shunting-Yard Diagram (courtesy to Wikipedia): 
