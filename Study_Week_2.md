@@ -8,7 +8,7 @@ MC Score: 18/39
 
 Was not here for crossover grading since I was in an AP exam.
 
-I also did other FRQs at home from class time till the exam day from more recent years and checked them with the AP Scoring Guidelines that Collegeboard released along with the problems. Pictures here: 
+I also did other FRQs at home from class time till the exam day from more recent years and checked them with the AP Scoring Guidelines that Collegeboard released along with the problems, and then made corrections. Pictures here: 
 
 <img width="348" alt="Screen Shot 2022-05-06 at 2 57 06 PM" src="https://user-images.githubusercontent.com/89210546/167221774-1a464578-7099-4386-8669-b6a1a69d91c8.png">
 
