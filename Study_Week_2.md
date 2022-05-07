@@ -5,6 +5,7 @@
 I lost the pictures of my 2015 FRQ papers but I wrote all my answers here on Repl: [Link](https://replit.com/@Rini/2014-FRQ#Director.java).
 
 MC Score: 18/39
+![image](https://user-images.githubusercontent.com/89210546/167239212-eced9c54-c0d5-421a-a6d9-f94b6fd14e65.png)
 
 Was not here for crossover grading since I was in an AP exam.
 
