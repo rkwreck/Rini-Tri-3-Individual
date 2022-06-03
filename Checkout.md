@@ -1,13 +1,5 @@
 {% include navigation.html %}
 
-# Table of Contents
-| # | Title | 
-|:-:| :---: | 
-| 1 | [N@TM](https://github.com/mistylavender/RedTailedHawks/wiki/Rini-K---Checkout/_edit#came-to-ntm-from-6-730-pm-we-checked-out-the-rest-of-the-museum-while-waiting-for-our-shift) | 
-| 2 | [Code w/ Tangibles](https://github.com/mistylavender/RedTailedHawks/wiki/Rini-K---Checkout/_edit#videos) | 
-| 3 | [Presenting at N@TM](https://github.com/mistylavender/RedTailedHawks/wiki/Rini-K---Checkout/_edit#presenting-at-ntm) | 
-| 4 | [GitHub Contributions](https://github.com/mistylavender/RedTailedHawks/wiki/Rini-K---Checkout/_edit#other)
-
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # Came to N@TM from 6-7:30 pm. We checked out the rest of the museum while waiting for our shift:
