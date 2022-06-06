@@ -7,12 +7,15 @@
 <img width="465" alt="Screen Shot 2022-06-02 at 1 13 40 AM" src="https://user-images.githubusercontent.com/89210546/171585758-a25387ec-7edd-452a-86b7-2cdc1d4a63cb.png">
 
 Art studio:
+
 ![image](https://user-images.githubusercontent.com/89210546/171584853-1c1e0a80-551a-4c5b-981c-764ece1ff68b.png)
 
 Band:
+
 ![image](https://user-images.githubusercontent.com/89210546/171584865-f9e3f314-06c5-4c9f-a80d-a062d80d6065.png)
 
 Photography:
+
 ![image](https://user-images.githubusercontent.com/89210546/171585383-f1213913-dcbd-4c58-bd1f-378055cd7e4c.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -78,24 +81,29 @@ Individual code tangibles:
 **- All features are directly related to website purpose (organized method for n@tm uploads)**
 
 **- Updated GitHub pages as part of role (link & tangibles): https://mistylavender.github.io/RedTailedHawks/**
+
 <img width="1085" alt="Screen Shot 2022-06-02 at 1 18 53 AM" src="https://user-images.githubusercontent.com/89210546/171586643-5fea510d-6a0d-485b-8a5b-cc42f982d974.png">
 
 
 **- Maintained READMe & Wiki Pages as part of role (tangibles): **
 
 README:
+
 <img width="1067" alt="Screen Shot 2022-06-02 at 1 19 33 AM" src="https://user-images.githubusercontent.com/89210546/171586754-c1120093-fa5b-40e9-b6f5-9fe88e545d5d.png">
 
 WIKI Pages:
+
 <img width="767" alt="Screen Shot 2022-06-02 at 1 20 29 AM" src="https://user-images.githubusercontent.com/89210546/171586931-c8389009-44de-427e-bcbe-b6665e2967d7.png">
 
 
 **- Ticket & Scrum Board tangibles:**
 
 Tickets for organization & weekly plans: 
+
 <img width="1067" alt="Screen Shot 2022-06-02 at 1 21 50 AM" src="https://user-images.githubusercontent.com/89210546/171587179-67a5e08a-9d82-4a6b-b155-72ea8f82bd3e.png">
 
 Scrum Board organization to keep track of tasks:
+
 <img width="1186" alt="Screen Shot 2022-06-02 at 1 24 02 AM" src="https://user-images.githubusercontent.com/89210546/171587702-878c9ec3-25a5-48ef-8356-a335ed8797ba.png">
 
 Success/Achievement - Gallery must have both cards/display & uploads working. I got the cards, display, and all frontend work completed, but the uploads had yet to be completed by the deadline by my teammates. 
