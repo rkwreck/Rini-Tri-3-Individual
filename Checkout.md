@@ -21,8 +21,7 @@ Photography:
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 # Videos 
-- Commercial Video: [Link](https://drive.google.com/file/d/1Yk_g0dMOE5nXcwEhWV8SsCEWKYT_SAok/view?usp=sharing)
-- Video w/ individual accomplishments & code: [Link](https://drive.google.com/file/d/1wrSgwUlLYObt0giLceprTiR7Iu4jTzEJ/view?usp=sharing)
+- Commercial Video: [Link]([https://drive.google.com/file/d/1Yk_g0dMOE5nXcwEhWV8SsCEWKYT_SAok/view?usp=sharing](https://drive.google.com/file/d/1Tw0BZlOZuz6l7ZqOdWTn01Yqg8DONDjz/view?usp=sharing))
 
 Individual code tangibles:
 
